@@ -75,10 +75,11 @@ ul {
     content: "";
     position: absolute;
     width: 100%;
-    height: 75%;
+    height: 90%;
     opacity: 0.5;
     background-image: linear-gradient(to right, rgba(0,0,0.7), rgba(0,0,0.4));
     z-index: 50;
+    
 
 }
 
@@ -86,10 +87,11 @@ ul {
 
 .video-container{
     width: 100%;
-    height: 75%;
+    height: 90%;
     position: absolute;
     top: -5;
     left: 0;
+  
     /* 
     position: absolute; /*ARRUMA ISSO AQUI*/
     overflow:hidden; 
@@ -102,27 +104,103 @@ ul {
 }  
 
 
-/* Botão */
+/* Text and Button */
 
-.botao{
+.title{
+    font-weight: 900;
+    color: white;
+    font-size: 8rem;
     position: absolute;
-    width: 178px;
-    height: 73px;
-    background: #CD3E3E;
-    border-radius: 15px;
+    z-index: 100;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+.txt{
+    
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/*Line*/
+
+hr.solid {
+    border-top: 3px solid #fff;
+    z-index: 100;
+    width: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+}
+
+.inc{
+
+    z-index: 100;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+
+}
+
+.btn{
+    /*element stylization */
+    margin-top: 20px;
+    width: 178px;
+    height: 63px;
+    background: #CD3E3E;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-decoration: none;
+   
+    /*element position*/
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    transition: all .2s;
+  
+    /* flex for align text*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.btn:hover{
+    background-color: #922d2d ;
+    color: #fff;
+}
+
 
 
 /*Sobre*/
 
 
 
-#sobre{
-    margin-top: 50px;
+ #sobre{
+    margin-top: 180px;
     font-size: 30px;
     color: black;
     text-align: center;
-   
+
 }
 
 .txt-sobre{
